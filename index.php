@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include 'ternary.php'; ?>
+    <?php include 'loop.php'; ?>
     
 </body>
 </html>
