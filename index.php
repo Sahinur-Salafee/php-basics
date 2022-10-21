@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include 'function.php'; ?>
+    <?php include 'array/array.php'; ?>
     
 </body>
 </html>
