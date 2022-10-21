@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include 'loop.php'; ?>
+    <?php include 'function.php'; ?>
     
 </body>
 </html>
