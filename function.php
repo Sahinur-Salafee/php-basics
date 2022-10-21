@@ -30,5 +30,26 @@ function PrintNumber($counter, $end, $steping) {
 
 PrintNumber(20, 40, 2);
 
-// Recursive Function
+
+// Fibonacci Serise
+
+// 0 1 1 2 3 5 8
+
+function fibonacci($old, $new, $start, $end) {
+    
+    if($start > $end) {
+        return;
+    }
+
+    $start++;
+    echo $old. ',';
+
+    $sum = $old + $new;
+    $old = $new;
+    $new = $sum;
+
+    fibonacci($old, $new, $start, $end);
+}
+
+fibonacci(0,1,1,20);
 
