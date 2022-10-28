@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include 'array/multidimensional-array.php'; ?>
+    <?php include 'array/array.php'; ?>
     
 </body>
 </html>

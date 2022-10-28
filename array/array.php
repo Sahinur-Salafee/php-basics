@@ -46,4 +46,24 @@ echo $carArr[1];
 echo '<br>';
 echo count($carArr);
 
+?>
+
+<h2>Array Slice</h2>
+
+<?php 
+
+$friuts = [
+    'mango',
+    'orange',
+    'banana',
+    'jackfruit',
+    'apple',
+    'plum',
+    'dates'
+];
+
+var_dump($friuts);
+
+$someFruits = array_slice($friuts, 2,5);
+var_dump($someFruits);
 
