@@ -66,4 +66,17 @@ var_dump($friuts);
 
 $someFruits = array_slice($friuts, 2,5);
 var_dump($someFruits);
+?>
+<br>
+<h2>Array Splice</h2>
+<?php
+// for nagative value
+//            -5    -4      -3      -2    -1
+$animals = ['cow','goat','hourse','cat','dog'];
+$addanimals = ['camel','tiger','lion'];
+$newanimals = array_splice($animals, -5,4, $addanimals);
+var_dump($newanimals);
+var_dump($animals);
+
+
 
