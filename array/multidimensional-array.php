@@ -33,3 +33,18 @@ echo '<br>';
 
 $studentarr = json_decode($jsondata, true);
 print_r($studentarr);
+
+?>
+<h2>Remove Data from a associative array</h2>
+
+<?php
+
+$person = array(
+    'fname' =>'jamal',
+    'lname' => 'Uddin'
+);
+
+var_dump($person);
+echo '<br>';
+unset($person['lname']);
+var_dump($person);
