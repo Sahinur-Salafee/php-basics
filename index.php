@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include 'array/array.php'; ?>
+    <?php include 'array/sorting.php'; ?>
     
 </body>
 </html>
