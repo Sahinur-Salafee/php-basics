@@ -23,7 +23,7 @@ foreach($foods as $key=>$value) {
 }
 
 // String to Array
-$vegetable = explode(', ','potato, carrot, brinjel,brokly, sweet-potato');
+$vegetable = explode(', ','potato, carrot, brinjel, brokly, sweet-potato');
 var_dump($vegetable);
 echo $vegetable[1] . '<br>';
 echo count($vegetable);
@@ -66,6 +66,7 @@ var_dump($friuts);
 
 $someFruits = array_slice($friuts, 2,5);
 var_dump($someFruits);
+var_dump($friuts);
 ?>
 <br>
 <h2>Array Splice</h2>
