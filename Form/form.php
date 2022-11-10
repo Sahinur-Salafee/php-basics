@@ -10,12 +10,12 @@
 
              if(isset($_REQUEST['fname']) && !empty($_REQUEST['fname'])) { ?>
                 <?php $fname = htmlspecialchars($_REQUEST['fname']); ?>
-                <p>First Name: <?php echo $_REQUEST['fname']; ?></p>
+                <p>First Name: <?php echo $fname; ?></p>
             <?php } ?> 
             
-            <?php if(isset($_REQUEST['fname']) && !empty($_REQUEST['lname'])) { ?>
+            <?php if(isset($_REQUEST['lname']) && !empty($_REQUEST['lname'])) { ?>
                 <?php $lname = htmlspecialchars($_REQUEST['lname']); ?>
-                <p>Last Name: <?php echo $_REQUEST['lname']; ?></p>
+                <p>Last Name: <?php echo $lname; ?></p>
             <?php } ?> 
 
             <form class="align-items-center" method="REQUEST"> <!-- HTTP VERB (GET, POST, PATCH...) -->
@@ -26,6 +26,10 @@
                 <div class="col-auto mb-3">
                     <label class="form-check-label" for="lname">Last Name</label>
                     <input type="text" class="form-control" name="lname" id="lname" value="<?php echo $lname; ?>">
+                </div>
+                <div class="col-auto mb-3">
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label><br>
                 </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary">Submit</button>
