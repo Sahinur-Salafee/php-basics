@@ -1,3 +1,4 @@
+<?php include_once 'functions.php'; ?>
 
 <div class="container">
     <div class="row">
@@ -44,13 +45,13 @@
 
                 <div class="col-auto mb-3">
                     <p><b>Select Some Fruits</b> </p>
-                    <input type="checkbox" id="fruits_1" name="fruits[]" value="Orange">
+                    <input type="checkbox" id="fruits_1" name="fruits[]" value="Orange" <?php isChecked('Orange'); ?>>
                     <label for="fruits_1"> Orange</label><br>
-                    <input type="checkbox" id="fruits_2" name="fruits[]" value="Apple">
+                    <input type="checkbox" id="fruits_2" name="fruits[]" value="Apple" <?php isChecked('Apple'); ?>>
                     <label for="fruits_2"> Apple</label><br>
-                    <input type="checkbox" id="fruits_3" name="fruits[]" value="Banana">
+                    <input type="checkbox" id="fruits_3" name="fruits[]" value="Banana" <?php isChecked('Banana'); ?>>
                     <label for="fruits_3"> Banana</label><br>
-                    <input type="checkbox" id="fruits_4" name="fruits[]" value="Mango">
+                    <input type="checkbox" id="fruits_4" name="fruits[]" value="Mango" <?php isChecked('Mango'); ?>>
                     <label for="fruits_4"> Mango</label>
                 </div>
                 <div class="col-auto">
