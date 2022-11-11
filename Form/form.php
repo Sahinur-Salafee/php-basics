@@ -1,5 +1,24 @@
 <?php include_once 'functions.php'; ?>
 
+<?php 
+
+/**
+ * Super Global Variables: Superglobals were introduced in PHP 4.1.0, and are built-in variables that are always available in all scopes.
+ * 
+ * $_REQUEST[] = PHP $_REQUEST is a PHP super global variable which is used to collect data after submitting an HTML form.
+ * 
+ * $_POST[] = PHP $_POST is a PHP super global variable which is used to collect form data after submitting an HTML form with method="post". 
+ * $_POST is also widely used to pass variables.
+ * 
+ * $_GET[] = PHP $_GET is a PHP super global variable which is used to collect form data after submitting an HTML form with method="get".
+ * $_GET can also collect data sent in the URL.
+ * 
+ * $_SERVER[] = $_SERVER is a PHP super global variable which holds information about headers, paths, and script locations.
+ * 
+ */
+
+?>
+
 <div class="container">
     <div class="row">
         <div class="col-md-3"></div>
