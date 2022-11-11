@@ -11,3 +11,7 @@ body {
 p {
   margin: 0;
 }
+
+.animal-select {
+  height: 200px;
+}

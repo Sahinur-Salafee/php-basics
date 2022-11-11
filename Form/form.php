@@ -45,7 +45,11 @@
                 }
 
                 // Multiple checkbox
-                var_dump($_REQUEST);
+                
+                
+                // Animals Array
+                $animals = ['Cow', 'Goat', 'Lamb', 'Elephant', 'Camel'];
+                // var_dump($_REQUEST);
             ?> 
 
             <form class="align-items-center" method="POST"> <!-- HTTP VERB (GET, POST, PATCH...) -->
@@ -72,6 +76,21 @@
                     <label for="fruits_3"> Banana</label><br>
                     <input type="checkbox" id="fruits_4" name="fruits[]" value="Mango" <?php isChecked('Mango'); ?>>
                     <label for="fruits_4"> Mango</label>
+                </div>
+
+                <div class="col-auto mb-3">
+                    <p>
+                        <?php
+                            if(isset($_POST['animal']) && !empty($_POST['animal'])) {
+                                printf('You have selected: %s',  filter_input(INPUT_POST, 'animal', FILTER_UNSAFE_RAW));
+                            }
+                        ?>
+                    </p>
+                    <label for="animal" class="mb-3"><b>Select Some Animal</b> </label><br>
+                    <select name="animal" id="animal" class="form-control animal-select" multiple>
+                        <option value="" selected disabled>Select Animals</option>
+                        <?php displayAnimals($animals); ?>
+                    </select>
                 </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary">Submit</button>

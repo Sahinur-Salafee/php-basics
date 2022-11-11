@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * Check Fruits Functions
  * @param mixed $value
  * return string
  */
@@ -10,3 +11,16 @@ function isChecked($value) {
         echo 'checked';
     } 
 }
+
+
+/**
+ * Add Animals Function
+ * @param mixed $option
+ * 
+ */
+
+ function displayAnimals($options) {
+    foreach($options as $animal) {
+        printf("<option value='%s'>%s</option>", strtolower($animal), ucwords($animal));
+    }
+ }
