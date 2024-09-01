@@ -16,3 +16,6 @@ echo '<br>';
 echo 'String Replace';
 echo '<br>';
 echo str_replace('Sahinur', 'salafee', 'Hello Sahinur');
+echo '<br>';
+$title = 'This is a title';
+echo str_replace('title', $title, 'This is a Paragraph');
