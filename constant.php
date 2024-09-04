@@ -36,10 +36,13 @@ foreach(MyBio as $key => $value) {
     echo $key . ":" . $value . "<br>";
 }
 
+const myCar = 'Tesla';
+
 // constant global scope
 
 function data() {
-    echo MyBio['name'];
+    echo MyBio['name'] . '<br>';
+    echo myCar;
 }
 
 data();
