@@ -36,3 +36,11 @@ foreach(MyBio as $key => $value) {
     echo $key . ":" . $value . "<br>";
 }
 
+// constant global scope
+
+function data() {
+    echo MyBio['name'];
+}
+
+data();
+
