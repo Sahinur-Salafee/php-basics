@@ -16,13 +16,14 @@
 
 // Recursive Function
 
-function PrintNumber($counter, $end, $steping) {
-    
-    if($counter > $end) {
+function PrintNumber($counter, $end, $steping)
+{
+
+    if ($counter > $end) {
         return;
     }
 
-    echo $counter. '<br>';
+    echo $counter . '<br>';
     $counter += $steping;
 
     PrintNumber($counter, $end, $steping);
@@ -35,14 +36,15 @@ PrintNumber(20, 40, 2);
 
 // 0 1 1 2 3 5 8
 
-function fibonacci($old, $new, $start, $end) {
-    
-    if($start > $end) {
+function fibonacci($old, $new, $start, $end)
+{
+
+    if ($start > $end) {
         return;
     }
 
     $start++;
-    echo $old. ',';
+    echo $old . ',';
 
     $sum = $old + $new;
     $old = $new;
@@ -51,5 +53,12 @@ function fibonacci($old, $new, $start, $end) {
     fibonacci($old, $new, $start, $end);
 }
 
-fibonacci(0,1,1,20);
+fibonacci(0, 1, 1, 20);
+echo '<br>';
+// function with argument
+function printName($name, int $age, $address)
+{
+    echo 'Name:' . $name . '<br> Age: ' . $age . '<br> Address:' . $address;
+}
 
+printName('Rahim', 40, 'Dhaka');
