@@ -62,3 +62,40 @@ function printName($name, int $age, $address)
 }
 
 printName('Rahim', 40, 'Dhaka');
+echo '<br>';
+function sumItems(float $a, float $b): float
+{
+    $c = $a + $b;
+    return $c;
+}
+echo sumItems(10.5, 20.7);
+echo '<br>';
+
+// variable number of arguments
+function sumNumbers(...$x)
+{
+    $n = 0;
+    $len = count($x);
+    for ($i = 0; $i < $len; $i++) {
+        $n = $n + $x[$i];
+    }
+
+    return $n;
+}
+
+$result = sumNumbers(20, 34, 40, 60, 4, 6, 10);
+echo $result;
+
+echo '<br>';
+// For string
+
+function myFamily($lastname, ...$firstname) // only last argument is variadic
+{
+    $text = '';
+    $len = count($firstname);
+    for ($i = 0; $i < $len; $i++) {
+        echo 'Hi ' . $firstname[$i] . ' ' . $lastname . '<br>';
+    }
+}
+
+myFamily('Deo', 'john', 'jane', 'jack', 'lili');
