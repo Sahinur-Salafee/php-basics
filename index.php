@@ -14,7 +14,7 @@
 
 <body>
 
-    <?php include 'function.php'; ?>
+    <?php include 'array/w3-school.php'; ?>
 
 
     <!-- JavaScript Bundle with Popper -->
