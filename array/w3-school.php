@@ -66,3 +66,31 @@ for ($row = 0; $row < $rows; $row++) {
     }
     echo "</ul>";
 }
+
+
+echo "<br>";
+
+/**
+ * Students array
+ * @param mixed $name, $age, $class
+ */
+$students = [
+    ['Asik', 6, 'one'],
+    ['Babul', 7, 'Two'],
+    ['Chamak', 8, 'Three'],
+    ['Danial', 9, 'Four'],
+    ['Esabella', 10, 'Five'],
+    ['Faruq', 11, 'Six']
+];
+
+$s_rows = count($students);
+
+for ($s_row = 0; $s_row < $s_rows; $s_row++) {
+    echo "<b>Students Row $s_row</b>";
+    echo "<ul>";
+    $s_cols = count($students[$s_row]);
+    for ($s_col = 0; $s_col < $s_cols; $s_col++) {
+        echo "<li>" . $students[$s_row][$s_col] . "</li>";
+    }
+    echo "</ul>";
+}
