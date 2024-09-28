@@ -24,7 +24,7 @@ echo "<br>";
 
 echo "<h2>Array Sorting.</h2>";
 $cars = array("BMW", "Tesla", "Axio", "Allion");
-$sortcar = sort($cars);
+$sortcar = asort($cars);
 for ($i = 0; $i < count($cars); $i++) {
     echo $cars[$i] . '<br>';
 }
