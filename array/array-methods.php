@@ -53,3 +53,12 @@ $a = array(
 var_dump(array_column($a, 'last_name'));
 var_dump(array_column($a, 'first_name'));
 var_dump(array_column($a, 'first_name', 'id'));
+
+echo '<br>';
+
+//PHP array_combine() Function
+$fname = array("Peter", "Ben", "Joe");
+$age = array("35", "37", "43");
+
+$c = array_combine($fname, $age);
+var_dump($c);
