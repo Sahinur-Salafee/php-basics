@@ -24,3 +24,32 @@ echo '<br>';
 
 $cars = array("Volvo", "BMW", "Toyota", "Honda", "Mercedes", "Opel");
 print_r(array_chunk($cars, 3));
+
+echo '<br>';
+
+// PHP array_column() Function
+/**
+ * The array_column() function returns the values from a single column in the input array.
+ */
+
+$a = array(
+    array(
+        'id' => 5698,
+        'first_name' => 'Peter',
+        'last_name' => 'Griffin',
+    ),
+    array(
+        'id' => 4767,
+        'first_name' => 'Ben',
+        'last_name' => 'Smith',
+    ),
+    array(
+        'id' => 3809,
+        'first_name' => 'Joe',
+        'last_name' => 'Doe',
+    )
+);
+
+var_dump(array_column($a, 'last_name'));
+var_dump(array_column($a, 'first_name'));
+var_dump(array_column($a, 'first_name', 'id'));
