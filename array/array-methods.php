@@ -62,3 +62,10 @@ $age = array("35", "37", "43");
 
 $c = array_combine($fname, $age);
 var_dump($c);
+
+echo "<br>";
+
+// PHP array_count_values() Function
+
+$a = array("A", "Cat", "Dog", "A", "Dog");
+var_dump(array_count_values($a));
