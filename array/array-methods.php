@@ -69,3 +69,18 @@ echo "<br>";
 
 $a = array("A", "Cat", "Dog", "A", "Dog");
 var_dump(array_count_values($a));
+
+echo "<br>";
+
+// PHP array_diff() Function
+$a1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow");
+$a2 = array("e" => "red", "f" => "green", "g" => "blue");
+$result = array_diff($a1, $a2);
+var_dump($result);
+
+$a1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow", 'i' => 'purple');
+$a2 = array("e" => "red", "f" => "black", "g" => "purples");
+$a3 = array("a" => "red", "b" => "black", "h" => "yellow");
+
+$result = array_diff($a1, $a2, $a3);
+var_dump($result);
